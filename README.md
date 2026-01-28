@@ -1,8 +1,8 @@
-### Distributed Transactions: 2PC and 3PC
+# Distributed Transactions: 2PC and 3PC
 ##Laboratory Report (AWS EC2)
 
 ## 6. Part 2 — Failure Scenarios (Two-Phase Commit)
-# 6.1 Scenario A — Coordinator Crash (Blocking Case)
+### 6.1 Scenario A — Coordinator Crash (Blocking Case)
 
 Goal
 To demonstrate the blocking problem inherent in the Two-Phase Commit (2PC) protocol.
@@ -39,7 +39,7 @@ Conclusion
 
 Two-Phase Commit is a blocking protocol. If the coordinator fails after collecting votes but before announcing the final decision, participants remain indefinitely in an uncertain state. This shows that 2PC is not fault-tolerant to coordinator crashes.
 
-# 6.2 Scenario B — Participant Crash
+### 6.2 Scenario B — Participant Crash
 
 Goal
 To observe coordinator behavior when a participant fails before voting.
@@ -69,7 +69,7 @@ Conclusion
 If a participant fails before voting, the coordinator safely aborts the transaction. Atomicity is preserved, although system availability is reduced.
 
 ## 7. Part 3 — Three-Phase Commit (3PC)
-# 7.1 Protocol Overview
+### 7.1 Protocol Overview
 
 Three-Phase Commit (3PC) improves upon 2PC by introducing an additional phase to avoid blocking.
 
@@ -85,7 +85,7 @@ Key Idea
 
 Participants never remain in an uncertain state. Assuming bounded communication delays, the system can safely reach a decision even if the coordinator crashes.
 
-# 7.2 Execution and Logs
+### 7.2 Execution and Logs
 
 Command Executed
 
@@ -118,15 +118,15 @@ Coordinator crash tolerance	No	Yes
 Protocol complexity	Low	Higher
 Additional phase	No	Yes
 ##9. Safety and Correctness Analysis
-#9.1 Atomicity
+###9.1 Atomicity
 
 Transactions either commit on all participants or abort everywhere.
 
-# 9.2 Consistency
+### 9.2 Consistency
 
 All nodes reach the same final decision for each transaction.
 
-# 9.3 Fault Tolerance
+### 9.3 Fault Tolerance
 
 2PC blocks if the coordinator crashes.
 
