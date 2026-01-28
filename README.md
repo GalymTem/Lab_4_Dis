@@ -29,11 +29,9 @@ No progress is possible without coordinator recovery.
 
 Screenshots
 
-📸 Screenshot 6.1 — Coordinator process terminated using CTRL+C
+<img width="569" height="53" alt="image" src="https://github.com/user-attachments/assets/7152f54f-08a7-467c-a273-32b1c253d6eb" />
 
-📸 Screenshot 6.2 — Participant B /status showing state READY
-
-📸 Screenshot 6.3 — Participant C /status showing state READY
+<img width="570" height="57" alt="image" src="https://github.com/user-attachments/assets/b93b99c4-66f6-4c7b-9e03-829999ce0773" />
 
 Conclusion
 
@@ -59,12 +57,6 @@ The transaction is aborted.
 No participant commits.
 
 Atomicity is preserved.
-
-Screenshot
-
-📸 Screenshot 6.4 — Coordinator output showing transaction aborted due to participant failure
-
-Conclusion
 
 If a participant fails before voting, the coordinator safely aborts the transaction. Atomicity is preserved, although system availability is reduced.
 
@@ -102,9 +94,10 @@ Observed Output
 
 Screenshots
 
-📸 Screenshot 7.1 — Client output showing transaction TX3 committed
+<img width="717" height="103" alt="image" src="https://github.com/user-attachments/assets/08d5d205-392b-4e24-a015-2b6b1e52af7c" />
 
-📸 Screenshot 7.2 — Participant /status showing state COMMITTED
+<img width="1024" height="91" alt="image" src="https://github.com/user-attachments/assets/166a325a-10ce-4fc0-a3b7-fec93ebe09dd" />
+
 
 Conclusion
 
