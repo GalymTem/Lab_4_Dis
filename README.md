@@ -1,5 +1,5 @@
 # Distributed Transactions: 2PC and 3PC
-##Laboratory Report (AWS EC2)
+## Laboratory Report (AWS EC2)
 
 ## 6. Part 2 — Failure Scenarios (Two-Phase Commit)
 ### 6.1 Scenario A — Coordinator Crash (Blocking Case)
